@@ -4,10 +4,10 @@
 Returns the boolean value of the statement:
 "There exists one path through the maze
 starting at a designated beginning
-and ending at the treasure, provided that one exists.
+and ending at the treasure, provided that one exists."
 
 ### Recursive Abstraction:
-When I am asked to find a path through the maze,
+When I am asked to find a legal path through the maze,
 the recursive abstraction can find a legal path of size n - 1.
 
 Definition of Legal:
