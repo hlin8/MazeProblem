@@ -2,12 +2,12 @@
 
 ## Statement of the Problem:
 Returns the boolean value of the statement:
-"There exists one path through the maze
+"There exists one path through a maze
 starting at a designated beginning
 and ending at the treasure, provided that one exists."
 
 ### Recursive Abstraction:
-When I am asked to find a legal path through the maze,
+When I am asked to find a legal path of size n through a maze,
 the recursive abstraction can find a legal path of size n - 1.
 
 Definition of Legal:
