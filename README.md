@@ -24,6 +24,7 @@ Definition of Legal:
  n = 0 (The explorer has reached the treasure) 
  
 ## Pseudocode 
+```
 If (n == 0) 
   return true; 
 else 
@@ -31,12 +32,14 @@ else
     move the explorer to the tile 
     if legal, 
       assign "true" to "visited"  
+      n + 1 
       invoke the recursive abstraction 
     if not legal, //explorer backtracks until it finds a tile with 2 possible routes 
       assign "true" to "leadsToDeadEnd" 
       move explorer to tile n-1 
   remove explorer
-  
+```
+
 ## Classes and fields / methods 
 ### Maze Builder: 
 Fields: 
