@@ -21,11 +21,11 @@ Definition of Legal:
   -Each movement is a cardinal direction, i.e North, South, West, East
 
 ## Base Case
- n = 0 (The explorer has reached the treasure) 
+ The explorer has reached the treasure
  
 ## Pseudocode 
 ```
-If (n == 0) 
+If (explorer has reached treasure) 
   return true; 
 else 
   for each unvisited and possibly legal tile, 
@@ -35,16 +35,16 @@ else
       n + 1 
       invoke the recursive abstraction 
     if not legal, //explorer backtracks until it finds a tile with 2 possible routes 
-      assign "true" to "leadsToDeadEnd" 
-      move explorer to tile n-1 
-  remove explorer
+      assign "true" to "containsDeadEnd" 
+      move explorer back 1 tile 
+  move explorer back 1 tile 
 ```
 
 ## Classes and fields / methods 
 ### Maze Builder: 
 Fields: 
 - visited (boolean) 
-- leadsToDeadEnd (boolean) 
+- containsDeadEnd (boolean) 
 
 Methods: 
 - BuildMaze(int , int ) 
