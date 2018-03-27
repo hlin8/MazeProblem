@@ -22,7 +22,7 @@ Definition of Legal:
  
 ## Pseudocode 
 ```
-If (explorer has reached treasure) 
+If (explorer.xcor == treasure.xcor && explorer.ycor == treasure.ycor)
   return true; 
 else 
   for each unvisited and possibly legal tile, 
@@ -35,6 +35,7 @@ else
       assign "true" to "containsDeadEnd" 
       move explorer back 1 tile 
   move explorer back 1 tile 
+return 
 ```
 
 ## Classes and fields / methods 
@@ -42,11 +43,16 @@ else
 Fields: 
 - visited (boolean) 
 - containsDeadEnd (boolean) 
+- xcor / ycor 
+- treasure
 
 Methods: 
-- BuildMaze(int , int ) 
+- BuildMaze(int row, int col) 
 ### MazeSolver:
-
+Fields:
+- e 
+Methods:
+- solveMaze()
 ## Version n wish list 
 ### version 1: 
   - return a solution 
