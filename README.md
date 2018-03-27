@@ -12,10 +12,10 @@ When I am asked to find a legal path of size n through a maze,
 the recursive abstraction can find a legal path of size n + 1.
 
 Definition of Legal:
--Each "tile" or position is crossed only once by the "explorer".
--The path doesn't contain smaller paths to dead-ends.
--Path doesn't cross barriers/walls.
--Each movement is a cardinal direction, i.e North, South, West, East
+- Each "tile" or position is crossed only once by the "explorer".
+- The path doesn't contain smaller paths to dead-ends.
+- Path doesn't cross barriers/walls.
+- Each movement is a cardinal direction, i.e North, South, West, East
 
 ## Base Case
  The explorer has reached the treasure
@@ -51,8 +51,12 @@ Methods:
 ### MazeSolver:
 Fields:
 - e 
+- currentCardinalDirection ( N, E, S, W) 
 Methods:
 - solveMaze()
+- setXCor
+- setYCor 
 ## Version n wish list 
 ### version 1: 
-  - return a solution 
+  - return all solutions
+  - shortest path to a solution 
