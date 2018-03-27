@@ -1,4 +1,5 @@
 # MazeProblem
+Henry Lin, Michelle Yang
 
 ## Statement of the Problem:
 Returns the boolean value of the statement:
