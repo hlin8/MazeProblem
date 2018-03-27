@@ -50,8 +50,9 @@ Methods:
 - BuildMaze(int row, int col) 
 ### MazeSolver:
 Fields:
-- e 
+- explorer 
 - currentCardinalDirection ( N, E, S, W) 
+
 Methods:
 - solveMaze()
 - setXCor
