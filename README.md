@@ -30,13 +30,23 @@ else
   for each unvisited and possibly legal tile, 
     move the explorer to the tile 
     if legal, 
-      mark the tile as "visited" and "possibly legal" 
+      assign "true" to "visited"  
       invoke the recursive abstraction 
     if not legal, //explorer backtracks until it finds a tile with 2 possible routes 
-      mark current tile as "visited" and "illegal" 
+      assign "true" to "leadsToDeadEnd" 
       move explorer to tile n-1 
   remove explorer
   
 ## Classes and fields / methods 
+### Maze Builder: 
+Fields: 
+- visited (boolean) 
+- leadsToDeadEnd (boolean) 
+
+Methods: 
+- BuildMaze(int , int ) 
+### MazeSolver:
 
 ## Version n wish list 
+### version 1: 
+  - return a solution 
