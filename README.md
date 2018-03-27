@@ -20,7 +20,7 @@ Definition of Legal:
 ## Base Case
  The explorer has reached the treasure
  
-## Pseudocode 
+## English or Pseudocode description of algorithm 
 ```
 If (explorer.xcor == treasure.xcor && explorer.ycor == treasure.ycor)
   return true; 
@@ -38,7 +38,7 @@ else
 return 
 ```
 
-## Classes and fields / methods 
+## Class(es) w/ fields and methods 
 ### Maze Builder: 
 Fields: 
 - visited (boolean) 
@@ -56,7 +56,6 @@ Methods:
 - solveMaze()
 - setXCor
 - setYCor 
-## Version n wish list 
-### version 1: 
+## Version *n* wish list  
   - return all solutions
   - shortest path to a solution 
