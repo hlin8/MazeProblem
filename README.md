@@ -25,7 +25,7 @@ Definition of Legal:
 If (explorer.xcor == treasure.xcor && explorer.ycor == treasure.ycor)
   return true; 
 else 
-  for each unvisited and possibly legal tile, 
+  for each unvisited and ~~possibly~~ legal tile, 
     move the explorer to the tile 
     if legal, 
       assign "true" to "visited"  
