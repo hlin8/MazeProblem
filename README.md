@@ -21,28 +21,25 @@ Definition of Legal:
  The explorer has reached the treasure
  
 ## English or Pseudocode description of algorithm 
-```
 If (explorer.xcor == treasure.xcor && explorer.ycor == treasure.ycor)
   return true; 
 else 
   for each unvisited and ~~possibly~~ legal tile, 
     move the explorer to the tile 
     if legal, 
-      assign "true" to "visited"  
-      n + 1 
+      assign "true" to "visited" to the associated tile
       invoke the recursive abstraction 
     if not legal, //explorer backtracks until it finds a tile with 2 possible routes 
-      assign "true" to "containsDeadEnd" 
+      ~~assign "true" to "containsDeadEnd"~~ 
       move explorer back 1 tile 
-  move explorer back 1 tile 
+  ~~move explorer back 1 tile~~ 
 return 
-```
 
 ## Class(es) w/ fields and methods 
 ### Maze Builder: 
 Fields: 
 - visited (boolean) 
-- containsDeadEnd (boolean) 
+~~- containsDeadEnd (boolean)~~ 
 - xcor / ycor 
 - treasure
 
