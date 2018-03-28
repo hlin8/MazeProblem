@@ -18,6 +18,9 @@ Definition of Legal:
 - Each movement is a cardinal direction, i.e North, South, West, East
 
 ## Base Case
+ If explorer on illegal tile,
+ return error
+ else
  The explorer has reached the treasure
  
 ## English or Pseudocode description of algorithm 
@@ -47,6 +50,7 @@ Methods:
 - BuildMaze(int row, int col) 
 ### MazeSolver:
 Fields:
+- 2D Array that has visited and legal parameters that has
 - explorer 
 - currentCardinalDirection ( N, E, S, W) 
 
