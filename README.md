@@ -28,29 +28,51 @@ Definition of Legal:
  
 ## English or Pseudocode description of algorithm 
 
+int direction = 1;
 if explorerposition = 0
-  return true;
-~~if explorerposition = 1;
-  return false;~~
+
+   return true;
+ 
 else
-   explorer.go(1)
-   if legal
-   revoke recursiver abstraction
-   else
-   maze[explorePostion.rank-1]
    
-  for each unvisited and ~~possibly~~ legal tile, 
+   create a snapshot of the maze
+   
+   go(direction) <!-- Updates the current instance of the maze -->
+   
+   if explorerisonA() == 2
+   
+   invoke recursive abstraction
+   
+   else
+   
+   retrieve/use snapshot <!--as new maze -->
+   
+   dropA(0) <!--I'm a bit iffy about this statement. If the maze has a long dead-end, once the explorer reaches the dead-end,
+   it will retreive the snapshot, (one step backwards) and drop a wall there. It won't drop a wall on the step that confirms the dead-end. Should we be worried about it? It's just a nit-picky thing.
+   
+   direction += 1;
+
+  ~~for each unvisited and possibly legal tile, 
     move the explorer to the tile 
     if legal, 
       assign "true" to "visited" to the associated tile
       invoke the recursive abstraction 
     if not legal, //explorer backtracks until it finds a tile with 2 possible routes 
-      ~~assign "true" to "containsDeadEnd"~~ 
+      assign "true" to "containsDeadEnd"
       move explorer back 1 tile 
-  ~~move explorer back 1 tile~~ 
-return 
+  move explorer back 1 tile
+return ~~
 
 ## Class(es) w/ fields and methods 
+
+### MazeSolver:
+Methods:
+- MazeSolver(Maze snapshot)
+Fields:
+- direction <!-- To iterate each direction the explorer should go -->
+- snapshot of the maze
+
+
 ### Maze Builder: 
 Fields: 
 - visited (boolean) 
