@@ -27,9 +27,18 @@ Definition of Legal:
  The explorer has reached the treasure
  
 ## English or Pseudocode description of algorithm 
-If (explorer.xcor == treasure.xcor && explorer.ycor == treasure.ycor)
-  return true; 
-else 
+
+if explorerposition = 0
+  return true;
+~~if explorerposition = 1;
+  return false;~~
+else
+   explorer.go(1)
+   if legal
+   revoke recursiver abstraction
+   else
+   maze[explorePostion.rank-1]
+   
   for each unvisited and ~~possibly~~ legal tile, 
     move the explorer to the tile 
     if legal, 
