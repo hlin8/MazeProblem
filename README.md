@@ -53,7 +53,7 @@ Methods:
 - BuildMaze(int row, int col) 
 ### MazeSolver:
 Fields:
-- 2D Array that has visited and legal parameters that has
+- 2D Array that has visited and legal parameters 
 - explorer 
 - currentCardinalDirection ( N, E, S, W) 
 
