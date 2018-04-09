@@ -53,6 +53,8 @@ else
    
    direction += 1;
 
+return false <!-- If on treasure, return true. Anything else should return false after invoking the MazeSolver method. -->
+
   ~~for each unvisited and possibly legal tile, 
     move the explorer to the tile 
     if legal, 
