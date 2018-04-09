@@ -29,6 +29,7 @@ Definition of Legal:
 ## English or Pseudocode description of algorithm 
 
 int direction = 1;
+
 if explorerposition = 0
 
    return true;
