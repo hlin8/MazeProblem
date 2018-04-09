@@ -71,6 +71,7 @@ return ~~
 ### MazeSolver:
 Methods:
 - MazeSolver(Maze snapshot)
+
 Fields:
 - direction <!-- To iterate each direction the explorer should go -->
 - snapshot of the maze
@@ -85,16 +86,6 @@ Fields:
 
 Methods: 
 - BuildMaze(int row, int col) 
-
-~~### MazeSolver:
-Fields:
-- 2D Array that has visited and legal parameters 
-- explorer 
-- currentCardinalDirection ( N, E, S, W) 
-Methods:
-- solveMaze()
-- setXCor
-- setYCor ~~
 
 ## Version *n* wish list  
   - return all solutions
