@@ -9,7 +9,7 @@ and ending at the treasure, provided that one exists."
 
 ### Recursive Abstraction:
 When I am asked to find a legal path through a maze in which n tiles
-havvev been visited, the recursive abstraction can find a legal path
+have been visited, the recursive abstraction can find a legal path
 through a maze in which n + 1 tiles have been visited. 
 ~~When I am asked to find a legal path of size n through a maze,
 the recursive abstraction can find a legal path of size n + 1.~~
