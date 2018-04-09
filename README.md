@@ -55,17 +55,6 @@ else
 
 return false <!-- If on treasure, return true. Anything else should return false after invoking the MazeSolver method. -->
 
-  ~~for each unvisited and possibly legal tile, 
-    move the explorer to the tile 
-    if legal, 
-      assign "true" to "visited" to the associated tile
-      invoke the recursive abstraction 
-    if not legal, //explorer backtracks until it finds a tile with 2 possible routes 
-      assign "true" to "containsDeadEnd"
-      move explorer back 1 tile 
-  move explorer back 1 tile
-return ~~
-
 ## Class(es) w/ fields and methods 
 
 ### MazeSolver:
