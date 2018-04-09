@@ -82,16 +82,17 @@ Fields:
 
 Methods: 
 - BuildMaze(int row, int col) 
-### MazeSolver:
+
+~~### MazeSolver:
 Fields:
 - 2D Array that has visited and legal parameters 
 - explorer 
 - currentCardinalDirection ( N, E, S, W) 
-
 Methods:
 - solveMaze()
 - setXCor
-- setYCor 
+- setYCor ~~
+
 ## Version *n* wish list  
   - return all solutions
   - shortest path to a solution 
