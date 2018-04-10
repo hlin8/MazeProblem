@@ -31,7 +31,7 @@ public class UserOfMaze {
          //displayer = new Displayer( Integer.parseInt( commandLine[3]));
          //displayerTest( maze);
 
-         snapshotDemo( maze);
+         //snapshotDemo( maze);
     }
 
 
@@ -153,7 +153,7 @@ public class UserOfMaze {
           java UserOfMaze mazes/4cell_treasureWest.txt 0 1
      */
     private static void snapshotDemo( Maze candidate) {
-        //Maze snapshot;
+        Maze snapshot;
 		int[][] copiedMaze = new int[rankCount][];
 		for (int rank = 0 ; rank < rankCount; rank++) {
 			int fileCount = old.maze[rank].length;
