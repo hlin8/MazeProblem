@@ -22,7 +22,8 @@ Definition of Legal:
 
 ## Base Case
  If explorer on illegal tile,
- return error
+ return false
+ 
  else
  The explorer has reached the treasure
  
