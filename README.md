@@ -48,8 +48,7 @@ else
    
    retrieve/use snapshot <!--as new maze -->
    
-   dropA(0) <!--I'm a bit iffy about this statement. If the maze has a long dead-end, once the explorer reaches the dead-end,
-   it will retreive the snapshot, (one step backwards) and drop a wall there. It won't drop a wall on the step that confirms the dead-end. Should we be worried about it? It's just a nit-picky thing. -->
+   dropA(0)
    
    direction += 1;
 
