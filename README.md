@@ -29,7 +29,7 @@ Definition of Legal:
 
 int direction = 1;
 
-if explorerposition = 0
+if explorerisonA() = 0
 
    return true;
  
@@ -47,7 +47,7 @@ else
    
    retrieve/use snapshot <!--as new maze -->
    
-   dropA(0)
+   dropA(1) 
    
    direction += 1;
 
