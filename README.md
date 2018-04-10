@@ -11,8 +11,6 @@ and ending at the treasure, provided that one exists."
 When I am asked to find a legal path through a maze in which n tiles
 have been visited, the recursive abstraction can find a legal path
 through a maze in which n + 1 tiles have been visited. 
-~~When I am asked to find a legal path of size n through a maze,
-the recursive abstraction can find a legal path of size n + 1.~~
 
 Definition of Legal:
 - Each "tile" or position is crossed only once by the "explorer".
@@ -69,7 +67,6 @@ Fields:
 ### Maze Builder: 
 Fields: 
 - visited (boolean) 
-~~- containsDeadEnd (boolean)~~ 
 - xcor / ycor 
 - treasure
 
