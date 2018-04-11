@@ -23,8 +23,25 @@ Definition of Legal:
  If explorer on the treasure, return true
  
 ## English or Pseudocode description of algorithm 
+English description: 
 ```
-
+if explorer is on a wall 
+ return false
+if explorer is on treasure
+ return true 
+else
+ for each direction
+  create a snapshot of the maze //updates current instance of the maze 
+  move the explorer one tile towards that direction 
+  if explorer is on a stepping stone
+   invoke recursive abstraction 
+  else 
+   retrieve/use snapshot //as new maze 
+   drop a wall
+return false //If on treasure, return true. Anything else should return false after invoking the MazeSolver method.
+```
+Pseudocode: 
+```
 int direction = 1;
 
 if explorerisonA() = 0
