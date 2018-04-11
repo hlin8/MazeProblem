@@ -154,17 +154,8 @@ public class UserOfMaze {
      */
     private static void snapshotDemo( Maze candidate) {
         Maze snapshot;
-		int[][] copiedMaze = new int[rankCount][];
-		for (int rank = 0 ; rank < rankCount; rank++) {
-			int fileCount = old.maze[rank].length;
-			copiedMaze[rank] = new int[fileCount];
-			for (int file = 0 ; file < fileCount; file++) {
-				copiedMaze[rank][file] = old.maze[rank][file];
-			}
-		}
-        //throw new java.lang.RuntimeException(
-            "Write code to take a snapshot of @candidate. "
-          + "Then, in @candidate, have the explorer go() out of the maze.");
+	snapshot = new Maze(candidate) ; 
+
 //
         // System.out.println(
                             // "modified candidate with no explorer"
@@ -186,6 +177,7 @@ public class UserOfMaze {
               ------
          */
 
+	 candidate = snapshot; 
         // throw new java.lang.RuntimeException(
             // "Write code to undo the go() by making @candidate refer "
           // + "to an unchanged copy of the maze.");
