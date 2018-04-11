@@ -8,9 +8,10 @@ starting at a designated beginning
 and ending at the treasure"
 
 ### Recursive Abstraction:
-When I am asked to find a legal path through a maze in which n tiles
-have been visited, the recursive abstraction can find a legal path
-through a maze in which n + 1 tiles have been visited. 
+When I am asked to find a legal path through a maze of an arbitrary length,
+a length of n,
+, the recursive abstraction can find a legal path
+through a maze of n + 1 tiles. 
 
 Definition of Legal:
 - Each "tile" or position is crossed only once by the "explorer".
