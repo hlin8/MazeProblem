@@ -5,7 +5,7 @@ Henry Lin, Michelle Yang
 Returns the boolean value of the statement:
 "There exists one path through a maze
 starting at a designated beginning
-and ending at the treasure, provided that one exists."
+and ending at the treasure"
 
 ### Recursive Abstraction:
 When I am asked to find a legal path through a maze in which n tiles
@@ -19,11 +19,8 @@ Definition of Legal:
 - Each movement is a cardinal direction, i.e North, South, West, East
 
 ## Base Case
- If explorer on illegal tile,
- return false
- 
- else
- The explorer has reached the treasure
+ If explorer on the wall, return false
+ If explorer on the treasure, return true
  
 ## English or Pseudocode description of algorithm 
 
