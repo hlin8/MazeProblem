@@ -154,7 +154,8 @@ public class UserOfMaze {
      */
     private static void snapshotDemo( Maze candidate) {
         Maze snapshot;
-	snapshot = new Maze(candidate) ; 
+		snapshot = new Maze(candidate) ; 
+		candidate.go(Maze.SOUTH);
 
 //
         // System.out.println(
@@ -177,7 +178,7 @@ public class UserOfMaze {
               ------
          */
 
-	 candidate = snapshot; 
+	 candidate =  new Maze(snapshot); 
         // throw new java.lang.RuntimeException(
             // "Write code to undo the go() by making @candidate refer "
           // + "to an unchanged copy of the maze.");

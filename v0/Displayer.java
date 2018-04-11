@@ -37,3 +37,4 @@ public class Displayer {
         if( console != null)
             console.readLine( "<enter> to continue: ");
     }
+}
