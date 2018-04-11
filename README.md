@@ -23,6 +23,7 @@ Definition of Legal:
  If explorer on the treasure, return true
  
 ## English or Pseudocode description of algorithm 
+```
 
 int direction = 1;
 
@@ -49,7 +50,7 @@ else
    direction += 1;
 
 return false <!-- If on treasure, return true. Anything else should return false after invoking the MazeSolver method. -->
-
+```
 ## Class(es) w/ fields and methods 
 
 ### MazeSolver:
