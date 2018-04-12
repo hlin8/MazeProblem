@@ -10,11 +10,10 @@ public class UserOfMazeSolver{
 
          Maze maze = new Maze("4cell_treasureWest.txt", 0, 2)
                             ;
-        System.out.println( maze + System.lineSeparator());
+        //System.out.println( maze + System.lineSeparator());
 	      
-        MazeSolver solver;
-        solver = new MazeSolver(maze);
-        solver.solveMaze(maze);
+        MazeSolver solver = new MazeSolver(maze);
+        System.out.println(solver.solveMaze(maze));
      }
 	
 }

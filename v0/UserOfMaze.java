@@ -157,37 +157,37 @@ public class UserOfMaze {
 		snapshot = new Maze(candidate) ; 
 		candidate.go(Maze.SOUTH);
 
-//
-        // System.out.println(
-                            // "modified candidate with no explorer"
-                          // + System.lineSeparator()
-                          // + candidate + System.lineSeparator()
-                          // + "unchanged snapshot" + System.lineSeparator()
-                          // + snapshot + System.lineSeparator()
-                          // );
 
-        /* Expecting...
-              modified candidate with no explorer
-              ------
-              |0** |
-              ------
+        System.out.println(
+                            "modified candidate with no explorer"
+                          + System.lineSeparator()
+                          + candidate + System.lineSeparator()
+                          + "unchanged snapshot" + System.lineSeparator()
+                          + snapshot + System.lineSeparator()
+                          );
 
-              unchanged snapshot
-              ------
-              |0e* |
-              ------
-         */
+        // /* Expecting...
+              // modified candidate with no explorer
+              // ------
+              // |0** |
+              // ------
+
+              // unchanged snapshot
+              // ------
+              // |0e* |
+              // ------
+         // */
 
 	 candidate =  new Maze(snapshot); 
         // throw new java.lang.RuntimeException(
             // "Write code to undo the go() by making @candidate refer "
           // + "to an unchanged copy of the maze.");
 
-        // System.out.println(
-                            // "restored candidate, with an explorer"
-                          // + System.lineSeparator()
-                          // + candidate + System.lineSeparator()
-                          // );
+         System.out.println(
+                             "restored candidate, with an explorer"
+                           + System.lineSeparator()
+                           + candidate + System.lineSeparator()
+                           );
         /* Expecting...
               restored candidate, with an explorer
               ------
