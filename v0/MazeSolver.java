@@ -2,13 +2,15 @@
   Determines whether there exists a path through a maze starting at a designated beginning and ending at the treasure
   **/ 
 public class MazeSolver{
-	Maze m; 
+	Maze inProgress;
+	boolean solutionExists; 
+	
 	public boolean solveMaze() {
-		if (m.explorerIsOnA() == 0) 
+		if (inProgress.explorerIsOnA() == 0) 
 			return true;
-		else if (m.explorerIsOnA() == 1)
+		else if (inProgress.explorerIsOnA() == 1)
 			return false;
-		return false;
+		return solutionExists;
   }
 }
 
