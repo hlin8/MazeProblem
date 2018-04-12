@@ -8,7 +8,7 @@ public class UserOfMazeSolver{
        throws java.io.FileNotFoundException {
         System.out.println();
 
-         Maze maze = new Maze("4cell_treasureWest.txt", 0, 2)
+         Maze maze = new Maze("4cell_treasureWest", 0, 2)
                             ;
         //System.out.println( maze + System.lineSeparator());
 	      
