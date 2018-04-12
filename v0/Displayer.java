@@ -37,4 +37,22 @@ public class Displayer {
         if( console != null)
             console.readLine( "<enter> to continue: ");
     }
+	/**
+      @return the number of lineSeparators in @string
+      
+      It would be pathetic for Java to lack a built-in
+      substring-counter. But I've wasted too long looking for it.
+     */
+    private static int lineSeparatorsIn( String string) {
+        int count = 0;
+        int fromIndex = 0;
+        while( ( fromIndex = string.indexOf( System.lineSeparator()
+                                           , fromIndex)
+               ) != -1
+            ) {
+            count++;
+            fromIndex += System.lineSeparator().length();
+            }
+        return count;
+    }
 }
