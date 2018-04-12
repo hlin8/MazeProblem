@@ -6,8 +6,9 @@ public class MazeSolver{
 	public boolean solveMaze() {
 		if (m.explorerIsOnA() == 0) 
 			return true;
-		else 
+		else if (m.explorerIsOnA() == 1)
 			return false;
+		return false;
   }
 }
 
