@@ -4,7 +4,10 @@
 public class MazeSolver{
 	Maze m; 
 	public boolean solveMaze() {
-		return false;
+		if (m.explorerIsOnA() == 0) 
+			return true;
+		else 
+			return false;
   }
 }
 
