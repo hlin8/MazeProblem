@@ -13,5 +13,10 @@ public class UserOfMazeSolver{
                             , Integer.parseInt( commandLine[2])
                             );
         System.out.println( maze + System.lineSeparator());
-	   }
+	      
+        MazeSolver solver = new MazeSolver();
+
+        solver.solveMaze(maze);
+     }
+	
 }
