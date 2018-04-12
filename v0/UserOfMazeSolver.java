@@ -1,4 +1,7 @@
 /**
   Tests the MazeSolver class 
   **/ 
-public class MazeSolver{} 
+public class UserOfMazeSolver{
+	public static void main(String[] args) {
+	}
+} 
