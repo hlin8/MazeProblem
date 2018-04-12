@@ -92,3 +92,6 @@ Methods:
 ## Version *n* wish list  
   - return all solutions
   - shortest path to a solution 
+  
+### Known Bugs
+Copy Constructor doesn't work. 
