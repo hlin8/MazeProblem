@@ -7,19 +7,16 @@ public class MazeSolver {
 	}
 	
 	public boolean solveMaze(Maze maze) {
-		Maze snapshot = new Maze(inprogress);
-		if (inprogress.explorerIsOnA() == 0) {
+		if (inprogress.explorerIsOnA() == Maze.TREASURE) {
 			return true;
 		}
-		if (inprogress.explorerIsOnA() == 1) {
+		if (inprogress.explorerIsOnA() == Maze.WALL) {
 			return false; 
 		}
 		else {
 			for (int direction = 0; direction < 4; direction++) {
-				//System.out.println("Maze before changes" + 
-												//System.lineSeparator() +
-												//inprogress); 
-				inprogress.dropA(1); 
+				Maze snapshot = new Maze(inprogress);
+				inprogress.dropA(Maze.WALL); 
 				System.out.println("Maze after dropping wall" + 
 												System.lineSeparator() +
 												inprogress); 
