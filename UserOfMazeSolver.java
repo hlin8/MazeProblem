@@ -8,7 +8,7 @@ public class UserOfMazeSolver{
        throws java.io.FileNotFoundException {
         System.out.println();
 
-         Maze maze = new Maze("intersection_treasureNorth.txt", 1, 0);
+         Maze maze = new Maze("intersection_noTreasure.txt", 1, 0);
          System.out.println( "Starting maze: " +
 										System.lineSeparator() +
 										maze + 
