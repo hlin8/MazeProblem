@@ -94,4 +94,4 @@ Methods:
   - shortest path to a solution 
   
 ### Known Bugs
-Copy Constructor doesn't work. 
+As of yet, we have not encountered any bugs nor have we tested larger cases due to time constraints.
