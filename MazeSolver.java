@@ -5,8 +5,8 @@ public class MazeSolver {
 	public MazeSolver(Maze file) {
 		inprogress = file;
 	}
+	
 	public boolean solveMaze(Maze maze) {
-		//inprogress = maze ; 
 		Maze snapshot = new Maze(inprogress);
 		if (inprogress.explorerIsOnA() == 0) {
 			return true;
@@ -16,14 +16,16 @@ public class MazeSolver {
 		}
 		else {
 			for (int direction = 0; direction < 4; direction++) {
-				System.out.println("Maze before changes" + 
-												System.lineSeparator() +
-												inprogress); 
+				//System.out.println("Maze before changes" + 
+												//System.lineSeparator() +
+												//inprogress); 
 				inprogress.dropA(1); 
 				System.out.println("Maze after dropping wall" + 
 												System.lineSeparator() +
 												inprogress); 
-				inprogress.go( (int) Math.pow(2, direction));
+				int heading = (int) Math.pow(2, direction); 
+				System.out.println("Now heading is " + heading); 
+				inprogress.go(heading);
 				System.out.println("Maze after moving" + 
 												System.lineSeparator() + 
 												inprogress);
