@@ -8,14 +8,15 @@ public class UserOfMazeSolver{
        throws java.io.FileNotFoundException {
         System.out.println();
 
-         Maze maze = new Maze("intersection_noTreasure.txt", 1, 0);
-         System.out.println( "Starting maze: " +
-										System.lineSeparator() +
-										maze + 
-										System.lineSeparator());
+        Maze maze = new Maze( commandLine[0]
+                            , Integer.parseInt( commandLine[1])
+                            , Integer.parseInt( commandLine[2])
+                            );
+        System.out.println( maze + System.lineSeparator());
+
 	      
 		MazeSolver solver = new MazeSolver(maze);
-        System.out.println(solver.solveMaze(maze));
+    System.out.println(solver.solveMaze(maze));
      }
 	
 }
